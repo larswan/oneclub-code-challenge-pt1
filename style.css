@@ -5,8 +5,8 @@
   font-size: 16px;
   font-weight: var(--lightest);
 
-  color: white;
-  background-color: var(--grey);
+  color: var(--grey);
+  background-color: white;
   
   /* Variables */
   /* Colors */
@@ -75,35 +75,50 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.154);
 }
 
 .navLinks {
-  color: white;
-  background-color: var(--grey);
+  color: var(--grey);
+  background-color: white;
   padding-inline: var(--fs-400);
   transition: .3s;
 }
 
 .navLinks:hover {
-  color: var(--grey);
-  background-color: white;
+  color: white;
+  background-color: var(--grey);
 }
 .navLinks.homeLink {
   margin-right: auto;
 }
 
 .splash {
-  height: 800px;
+  height: 60vh;
   position: relative;
+  z-index: 0;
   background-image: url('https://images.squarespace-cdn.com/content/v1/5506f408e4b0619cc3aeac05/1465935541834-TQ4NYZQAT7UM36FOJ193/image-asset.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: white;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* padding: var(--fs-400) */
+  padding: var(--fs-400)
+}
+@media screen and (max-width: 600px) {
+  .splash {
+    height: 60vh;
+  }
+}
+
+.splash h1, .splash h2 {
+text-shadow: 0 0 5px black;
 }
 
 .contentFlexbox {
@@ -111,7 +126,7 @@ body {
   flex-direction: column;
   flex-wrap: none;
 }
-@media (min-width: 40em) {
+@media (min-width: 1000px ) {
   .contentFlexbox{
     flex-direction: row;
   }
@@ -119,5 +134,6 @@ body {
 
 .contentContainer {
   flex: 1;
-  padding-inline: var(--fs-500)
+  padding-inline: var(--fs-500);
+  padding-block: var(--fs-400);
 }
