@@ -51,6 +51,7 @@ h2 {
 }
 
 a {
+  color: var(--grey);
   text-decoration: none;
   font-weight: var(--b);
   font-size: var(--fs-500);
@@ -89,8 +90,7 @@ body {
 }
 
 .navLinks:hover {
-  color: white;
-  background-color: var(--grey);
+  background-color: rgba(0, 0, 0, 0.074);
 }
 .navLinks.homeLink {
   margin-right: auto;
@@ -119,6 +119,7 @@ body {
 
 .splash h1, .splash h2 {
 text-shadow: 0 0 5px black;
+margin-block: 0;
 }
 
 .contentFlexbox {
