@@ -19,15 +19,15 @@
   --boldest: 700;
 
   /* Font Sizes */
-  --fs-xl: 4rem;
+  --fs-xl: 3rem;
   --fs-600: 1.8rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem; 
 }
 
-@media (min-width: 40em) {
+@media (min-width: 600px) {
   :root {
-    --fs-xl: 7rem;
+    --fs-xl: 6rem;
     --fs-600: 2.5rem;
     --fs-500: 1.25rem;
     --fs-400: 1.125rem;
@@ -54,7 +54,7 @@ a {
   color: var(--grey);
   text-decoration: none;
   font-weight: var(--b);
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
 }
 
 body {
@@ -84,6 +84,7 @@ body {
 
 .navLinks {
   color: var(--grey);
+    font-size: var(--fs-500);
   background-color: white;
   padding-inline: var(--fs-400);
   transition: .3s;
@@ -113,7 +114,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .splash {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
@@ -127,7 +128,7 @@ margin-block: 0;
   flex-direction: column;
   flex-wrap: none;
 }
-@media (min-width: 1000px ) {
+@media (min-width: 600px ) {
   .contentFlexbox{
     flex-direction: row;
   }
@@ -150,7 +151,7 @@ margin-block: 0;
 }
 .footer p {
   font-size: var(--fs-400);
-  margin: 5px;
+  padding-top: 32px;
   align-self: center;
 }
 
