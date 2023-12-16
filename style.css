@@ -19,8 +19,8 @@
   --boldest: 700;
 
   /* Font Sizes */
-  --fs-xl: 5rem;
-  --fs-600: 2rem;
+  --fs-xl: 4rem;
+  --fs-600: 1.8rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem; 
 }
@@ -137,4 +137,25 @@ margin-block: 0;
   flex: 1;
   padding-inline: var(--fs-500);
   padding-block: var(--fs-400);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding-inline: 10vw;
+  padding-top: 32px;
+  background-color: var(--grey);
+  color: white
+}
+.footer p {
+  font-size: var(--fs-400);
+  margin: 5px;
+  align-self: center;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  color: white
 }
